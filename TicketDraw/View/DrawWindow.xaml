@@ -1,0 +1,14 @@
+﻿<Window x:Class="TicketDraw.View.DrawWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ViewModel="clr-namespace:TicketDraw.ViewModel"
+        xmlns:View="clr-namespace:TicketDraw.View"
+        Title="DrawWindow" Height="410" Width="300">
+
+    <Window.DataContext>
+        <ViewModel:Presenter/>
+    </Window.DataContext>
+
+    <View:DrawControl/>
+
+</Window>
